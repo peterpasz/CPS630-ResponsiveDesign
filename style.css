@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+h1{
+	color: #f2cbbc;
+	text-shadow: 2px 2px #334431; 
+	padding: 150px;
+	margin: 0;
+	background-image: url("img/flamingo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+	width: 100%;
+}
+
+body{
+	color: #f2cbbc;
+	background-color: #e6af4b;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	padding-bottom: 150px;
+	min-height: 100%;
+}
+
+nav{
+	width: 100%;
+    overflow: hidden;
+    background-color: #334431;
+}
+
+a{
+	display: inline-block;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 17px;
+	color: inherit;
+}
+
+a:hover {background-color: #e05038;}
+
+article{
+	padding: 20px 20px;
+	margin: 20px;
+	background-color: #334431;
+	float: left;
+	box-shadow: 10px 10px #e05038;
+	text-justify: inter-word;
+}
+
+aside{
+	padding: 20px;
+}
+
+figcaption{
+	padding: 20px;
+	margin: 0px 0px 50px 0px;
+	background-color: #334431;
+	box-shadow: 10px 10px #e05038;
+	text-justify: inter-word;
+}
+
+.flamingopic{
+	border-radius: 20px;
+	margin: 20px;
+}
+
+.gallery{
+	float: left;
+}
+
+.robo{
+	margin: 20px;
+	border-radius: 50px;
+}
+
+.figblock{
+	display: block;
+}
+
+details{
+	margin: 20px 0px 0px 0px;
+}
+
+img{
+	width: 30%;
+}	
+	
+aside{
+	float: right;
+	background-color: #334431; 
+	height: 100%;
+}
+
+footer{
+	padding: 50px;
+	width: 100%;
+    overflow: hidden;
+    background-color: #334431;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+@media only screen and (min-width: 1440px){
+	/* large monitor */
+	.c1{
+		width: 30%;
+	}
+	.c2{
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+	/* laptop */
+	.c1{
+		width: 45%;
+	}
+	.c2{
+		width: 93%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    /* tablets and desktop */
+	.c1{
+		width: 40%;
+	}
+	.c2{
+		width: 84%;
+	}
+	h1{
+		padding: 70px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+	a{
+		display: block;
+	}
+	.c1{
+		width: 90%;
+	}	
+	.c2{
+		width: 90%;
+	}
+		h1{
+		padding: 50px;
+	}
+}
+
+
+
